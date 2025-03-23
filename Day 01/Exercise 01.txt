@@ -1,0 +1,52 @@
+MariaDB [UOV]> create table exercise(PhysicianID INT(5),Name VARCHAR(30),Position VARCHAR(30));
+Query OK, 0 rows affected (0.129 sec)
+
+MariaDB [UOV]> DESC exercise
+    -> ;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| PhysicianID | int(5)      | YES  |     | NULL    |       |
+| Name        | varchar(30) | YES  |     | NULL    |       |
+| Position    | varchar(30) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+3 rows in set (0.013 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('1','John Dorian','Staff Internist');
+Query OK, 1 row affected (0.098 sec)
+
+MariaDB [UOV]> select * from exercise;
++-------------+-------------+-----------------+
+| PhysicianID | Name        | Position        |
++-------------+-------------+-----------------+
+|           1 | John Dorian | Staff Internist |
++-------------+-------------+-----------------+
+1 row in set (0.000 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('2','Elliot Reid','Staff Attending Physician');
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('3','Christopher Turk','Surgical Attending Physician');
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('4','Percival Cox','Senior Attending Physician');
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('5','Keith Dudemeister','MD Resisdent');
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [UOV]> INSERT INTO exercise VALUES('6','Molly Clock','Attending Psychiatrist');
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [UOV]> select * from exercise;
++-------------+-------------------+------------------------------+
+| PhysicianID | Name              | Position                     |
++-------------+-------------------+------------------------------+
+|           1 | John Dorian       | Staff Internist              |
+|           2 | Elliot Reid       | Staff Attending Physician    |
+|           3 | Christopher Turk  | Surgical Attending Physician |
+|           4 | Percival Cox      | Senior Attending Physician   |
+|           5 | Keith Dudemeister | MD Resisdent                 |
+|           6 | Molly Clock       | Attending Psychiatrist       |
++-------------+-------------------+------------------------------+
+6 rows in set (0.000 sec)
