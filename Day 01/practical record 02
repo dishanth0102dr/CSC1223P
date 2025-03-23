@@ -1,0 +1,18 @@
+Date : 20.03.2025
+Practical Number : 02
+Problem Specification : Create a table in MySQL.
+
+Implementation : 
+01. MariaDB [UOV]> create table exercise(PhysicianID INT(5),Name VARCHAR(30),Position VARCHAR(30));
+02. MariaDB [UOV]> DESC exercise
+03. MariaDB [UOV]> INSERT INTO exercise VALUES('1','John Dorian','Staff Internist');
+    MariaDB [UOV]> INSERT INTO exercise VALUES('2','Elliot Reid','Staff Attending Physician');
+    MariaDB [UOV]> INSERT INTO exercise VALUES('3','Christopher Turk','Surgical Attending Physician');
+    MariaDB [UOV]> INSERT INTO exercise VALUES('4','Percival Cox','Senior Attending Physician');
+    MariaDB [UOV]> INSERT INTO exercise VALUES('5','Keith Dudemeister','MD Resisdent');
+    MariaDB [UOV]> INSERT INTO exercise VALUES('6','Molly Clock','Attending Psychiatrist');  
+04. MariaDB [UOV]> select * from exercise;
+
+Conclusion : We have understood to how to create a table and insert the values in MySQL.
+             i learned how to create database
+             I learned how to give multiple attribute values
