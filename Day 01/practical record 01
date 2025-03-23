@@ -1,0 +1,15 @@
+Date : 20.03.2025
+Practical Number : 01
+Problem Specification : Introduction to MySQL.
+
+Implementation : 
+01. MariaDB [(none)]> SHOW databases;
+02. create database UOV;
+03. MariaDB [(none)]> use UOV;
+    Database changed
+    MariaDB [UOV]> SHOW databases;
+04. MariaDB [UOV]> DESC students;
+05. MariaDB [UOV]> create table students(std_id VARCHAR(15),name VARCHAR(30),course VARCHAR(30),DOB DATE,city VARCHAR(20));
+06. MariaDB [UOV]> INSERT INTO students VALUES('2022/ASP/80','dishanth','AMC','2002-06-17','Ampara');
+
+Conclusion : We have understood to how to use the MySQL, create a data table and input the values.
